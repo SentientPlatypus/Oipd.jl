@@ -15,7 +15,7 @@ PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
 [compat]
 CondaPkg = "0.2.33"
 DataFrames = "1.8.1"
-Dates = "1.11.0"
+Dates = "1.10.0"
 Distributions = "0.25.122"
 Optim = "1.13.3"
 Plots = "1.41.3"
