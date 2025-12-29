@@ -4,14 +4,23 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Julia](https://img.shields.io/badge/Julia-1.10+-blue.svg)](https://julialang.org/)
 
-A comprehensive Julia package for options pricing, volatility modeling, and risk-neutral probability analysis.
+Oipd.jl extracts risk-neutral probability distributions from options market data, revealing the market's collective expectations about future asset price movements.
+
+Under the efficient market hypothesis, these option-implied probabilities represent the most informed estimates available of potential price outcomes, derived from the wisdom of market participants.
+
+> This package was inspired by the existing python library, [OIPD](https://github.com/tyrneh/options-implied-probability/blob/main/README.md)
+
+
+![Risk-Neutral Probability Density Function](examples/example_plots/AAPL/2026-01-09/7_pdf_numerical.png)
+
+*Example output: Risk-neutral probability density function extracted from AAPL options data*
 
 ## Features
 
-- **Real-time Options Data**: Fetch live options chains from Yahoo Finance
-- **Black-Scholes Pricing**: Complete implementation with implied volatility calculation
+- **Real-time Options Data**: Fetches live options chains from Yahoo Finance
+- **Black-Scholes Pricing**: Completes implementation with implied volatility calculation
 - **SVI Model**: Stochastic Volatility Inspired model for volatility smile fitting
-- **Risk-Neutral Probabilities**: Calculate probabilities of price movements using risk-neutral density
+- **Risk-Neutral Probabilities**: Calculates probabilities of price movements using risk-neutral density
 - **Breeden-Litzenberger**: Numerical density estimation from option prices
 - **Visualization**: Built-in plotting functions for analysis and debugging
 - **Arbitrage Detection**: Automatic checking for model consistency and arbitrage opportunities
@@ -54,7 +63,6 @@ Pkg.add("https://github.com/SentientPlatypus/Oipd.jl")
 ### Pricing Models
 - **Black-Scholes**: European option pricing with Newton-Raphson implied volatility
 - **SVI**: Parametric volatility smile modeling
-- **Risk-Neutral Density**: Extract probability distributions from option prices
 
 ### Probability Analysis
 - Calculate risk-neutral probabilities for price movements
@@ -67,6 +75,15 @@ Pkg.add("https://github.com/SentientPlatypus/Oipd.jl")
 - Risk-neutral density plots
 - SVI model fit diagnostics
 
+#### Example Plots (AAPL Options Analysis)
+
+**Implied Volatility Smile**
+![Implied Volatility Smile](examples/example_plots/AAPL/2026-01-09/2_iv_smile.png)
+
+**SVI Model Fit**
+![SVI Fitted Volatility Surface](examples/example_plots/AAPL/2026-01-09/5_iv_svi.png)
+
+**Risk-Neutral Probability Density**
 ![Risk-Neutral Probability Density Function](examples/example_plots/AAPL/2026-01-09/7_pdf_numerical.png)
 
 ## Example Usage

@@ -54,7 +54,7 @@ module Oipd
             plot_smoothed_iv_filtered(smoothed_data_no_nans, ticker, dir)
             plot_svi_fit(smoothed_data_no_nans, iv_fun, ticker, dir)
             plot_repriced_prices(repriced_paritized, ticker, dir)
-            plot_pdf_numerical(repriced_paritized, spot, iv_fun, rate, τ, ticker, dir)
+            plot_pdf_numerical(repriced_paritized, spot, iv_fun, rate, τ, ticker, expiry, dir)
         end
 
 

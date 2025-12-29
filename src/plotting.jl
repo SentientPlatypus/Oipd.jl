@@ -100,7 +100,7 @@ function plot_repriced_prices(repriced_paritized, ticker, dir::String)
     savefig("$(dir)/6_price_vs_strike_repriced.png")
 end
 
-function plot_pdf_numerical(repriced_paritized, spot, iv_fun, rate, τ, ticker, dir::String)
+function plot_pdf_numerical(repriced_paritized, spot, iv_fun, rate, τ, ticker, expiry_date::String, dir::String)
     K = Float64.(repriced_paritized.strike)
     std_K = std(K) #this is std of strike, not pdf btw.
     K_min = spot - 1 * std_K
@@ -113,7 +113,7 @@ function plot_pdf_numerical(repriced_paritized, spot, iv_fun, rate, τ, ticker, 
         linewidth = 2,
         xlabel = "Strike",
         ylabel = "Probability Density",
-        title = "$(ticker) Probability Density function numerical (Breeden-Litzenberger)",
+        title = "$(ticker) pdf on $(expiry_date) (Breeden-Litzenberger)",
         legend = true,
         size=(800,600)
     )
