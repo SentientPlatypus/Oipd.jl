@@ -1,8 +1,8 @@
-# Oipd.jl Technical Documentation
+# Oipdf.jl Technical Documentation
 
 ## Overview
 
-Oipd.jl is a Julia package implementing advanced options pricing models and risk-neutral probability analysis. The package combines real-time market data with sophisticated mathematical models to provide accurate pricing and risk assessment tools.
+Oipdf.jl is a Julia package implementing advanced options pricing models and risk-neutral probability analysis. The package combines real-time market data with sophisticated mathematical models to provide accurate pricing and risk assessment tools.
 
 ## Process Overview
 
@@ -257,4 +257,4 @@ plot_pdf_numerical(data, spot, iv_fun, rate, τ, ticker, savedir)
 - **Plots**: Visualization
 - **PythonCall**: Yahoo Finance integration
 - **Distributions**: Statistical functions</content>
-<parameter name="filePath">/mnt/d/Code/Machine Learning/Oipd/TECHNICAL_README.md
+<parameter name="filePath">/mnt/d/Code/Machine Learning/Oipdf/TECHNICAL_README.md

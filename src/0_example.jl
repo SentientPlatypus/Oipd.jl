@@ -1,6 +1,6 @@
-include(joinpath(@__DIR__, "Oipd.jl"))
+include(joinpath(@__DIR__, "Oipdf.jl"))
 
-using .Oipd
+using .Oipdf
 
 
 println("this is running top_level_test.jl")

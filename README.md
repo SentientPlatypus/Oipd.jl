@@ -1,10 +1,10 @@
-# Oipd.jl
+# Oipdf.jl
 
 [![Build Status](https://github.com/SentientPlatypus/Oipd.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/SentientPlatypus/Oipd.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Julia](https://img.shields.io/badge/Julia-1.10+-blue.svg)](https://julialang.org/)
 
-Oipd.jl extracts risk-neutral probability distributions from options market data, revealing the market's collective expectations about future asset price movements.
+Oipdf.jl extracts risk-neutral probability distributions from options market data, revealing the market's collective expectations about future asset price movements.
 
 Under the efficient market hypothesis, these option-implied probabilities represent the most informed estimates available of potential price outcomes, derived from the wisdom of market participants.
 
@@ -28,7 +28,7 @@ Under the efficient market hypothesis, these option-implied probabilities repres
 ## Quick Start
 
 ```julia
-using Oipd
+using Oipdf
 
 # Calculate probability that AMD will be below $200 at expiration
 prob = prob_below("AMD", 200.0, "2025-01-17")
@@ -89,7 +89,7 @@ Pkg.add("https://github.com/SentientPlatypus/Oipd.jl")
 ## Example Usage
 
 ```julia
-using Oipd
+using Oipdf
 
 # Analyze AMD options expiring in January 2025
 ticker = "AMD"
@@ -133,13 +133,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-If you use Oipd.jl in your research, please cite:
+If you use Oipdf.jl in your research, please cite:
 
 ```bibtex
 @software{wicksono2025oipd,
   author = {Gene Wicaksono},
-  title = {Oipd.jl: Options Pricing and Risk Analysis in Julia},
-  url = {https://github.com/SentientPlatypus/Oipd.jl},
+  title = {Oipdf.jl: Options Pricing and Risk Analysis in Julia},
+  url = {https://github.com/SentientPlatypus/Oipdf.jl},
   year = {2025}
 }
 ```

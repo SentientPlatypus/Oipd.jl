@@ -1,4 +1,4 @@
-module Oipd
+module Oipdf
     include(joinpath(@__DIR__, "data.jl"))
     include(joinpath(@__DIR__, "functions.jl"))
     include(joinpath(@__DIR__, "bs.jl"))
