@@ -40,6 +40,9 @@ The process of generating the PDFs and CDFs is as follows:
 9. **CDF Calculation**: Once we have the PDF, calculate the cumulative distribution function through numerical integration.
 
 ## Mathematical Framework
+For more details, my handwritten notes can be seen in the `/notes` folder.
+- [Implied Probability](notes/Implied%20Probability.pdf)
+- [Black Scholes](notes/Black%20Scholes%20Merton.pdf)
 
 ### Black-Scholes Model
 
