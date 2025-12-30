@@ -4,7 +4,7 @@ using DataFrames
 include("bs.jl")
 
 function greet_your_package_name()
-    return "Hello Oipd!"
+    return "Hello $(nameof(@__MODULE__))!"
 end
 
 function get_τ(expiry_dt::String)
